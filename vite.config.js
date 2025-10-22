@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react(), tailwindcss()],
-    base: "/personalPortfolio/", // 👈 your GitHub repo name (exactly same)
+    base: "/personalPortfolio/", 
     server: {
       open: true,
       host: false,
