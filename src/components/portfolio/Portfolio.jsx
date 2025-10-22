@@ -115,7 +115,7 @@ const Portfolio = () => {
           href="https://github.com/Subhan-01/"
           className="btn bg-gradient-to-r btn-primary  py-3 px-8 rounded-full text-[16px] font-semibold shadow-lg hover:shadow-[#9929fb]/40 hover:scale-105 transition-all duration-300"
         >
-          Discover my latest projects on GitHub :)
+          View More On GitHub :)
         </a>
       </div>
     </section>
