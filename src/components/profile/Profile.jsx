@@ -3,76 +3,67 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 import CV from "../../assets/resume/subhan.pdf";
-import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
     <div
-      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className="relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4"
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
+
         {/* Profile image */}
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
-          <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
+          <div className="max-w-106 h-117 overflow-hidden rounded-xl">
             <img
-              className="bg-soft-white h-[120%] object-cover"
+              className="h-[120%] object-cover"
               src={person}
-              alt=""
+              alt="profile"
             />
           </div>
-          {/* Social media section */}
-          <div className="relative bottom-9">
-            <div className="flex justify-center">
-              <div className="px-6 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
-                <SocialMedia />
-              </div>
+
+          {/* Social media */}
+          <div className="relative bottom-9 flex justify-center">
+            <div className="px-6 max-w-66 py-3 bg-white rounded-md shadow-2xl">
+              <SocialMedia />
             </div>
           </div>
         </div>
+
+        {/* Content */}
         <div className="max-sm:w-full w-[33rem]">
-          <h2
-            className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
-          >
+
+          <h2 className="text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] max-md:text-center font-semibold mb-8">
             I am a Professional Web Developer
           </h2>
-          <div
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
-          >
+
+          <div className="text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600">
             <p>
-              I build modern, responsive web applications for clients using 
-              PHP, Angular, WordPress, and JavaScript. I focus on delivering 
-              clean, functional, and user-friendly solutions that solve 
-              real problems.
+              I build modern, responsive web applications using PHP,
+              Angular, WordPress, and JavaScript. I focus on clean,
+              functional, and user-friendly solutions.
             </p>
+
             <p className="mt-3">
-              With hands-on experience in both frontend and backend development, 
-              I have worked on e-commerce platforms, hospital portals, SEO 
-              portfolios, and dynamic web apps — always focusing on 
-              performance and usability.
+              I have worked on e-commerce platforms, hospital portals,
+              SEO portfolios, and dynamic web apps with strong focus
+              on performance and usability.
             </p>
           </div>
+
+          {/* Download Button */}
           <div className="mt-8 flex max-md:justify-center">
-<<<<<<< HEAD
-  <a
-    className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-    href={CV}
-    download
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FontAwesomeIcon icon={faDownload} /> Download CV
-  </a>
-</div>
-=======
-            
-              className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]`}
+            <a
+              className="btn xxs:btn-lg px-6 xxs:py-3 btn-primary text-xs sm:text-[16px]"
               href={CV}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faDownload} /> Download CV
             </a>
           </div>
->>>>>>> fd81f99bfa80f90b87d4060999c0270ca1b82814
+
         </div>
       </div>
     </div>

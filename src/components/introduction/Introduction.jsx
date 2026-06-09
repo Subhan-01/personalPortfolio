@@ -28,12 +28,14 @@ const Introduction = () => {
     >
       <div className="w-full flex flex-col justify-between max-lg:text-center">
         <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
+
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
             Hello, I'm
             <span className="text-nowrap shrink-0 inline-block w-full">
               Subhan Imran
             </span>
           </p>
+
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
             A <span className="bg-highlight">Web Developer</span>{" "}
             based in Karachi, Pakistan. I build modern,
@@ -42,19 +44,19 @@ const Introduction = () => {
             I focus on creating practical web solutions
             that are both functional and user-friendly.
           </p>
+
           <p className="text-center lg:text-start">
-<<<<<<< HEAD
             <a
-=======
-            
->>>>>>> fd81f99bfa80f90b87d4060999c0270ca1b82814
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
               href="mailto:buisnesswithsubhan@gmail.com"
             >
               Say Hello!
             </a>
           </p>
+
         </div>
+
+        {/* Stats */}
         <div className="mx-auto lg:mx-0 relative">
           <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1">
             {informationSummaryData.map((item) => (
@@ -62,16 +64,18 @@ const Introduction = () => {
             ))}
           </div>
         </div>
+
       </div>
-      <div
-        className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}
-      >
+
+      {/* Image */}
+      <div className="max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative">
         <img
-          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
+          className="shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl"
           src={person}
           alt="person"
         />
       </div>
+
     </div>
   );
 };
