@@ -5,8 +5,6 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 import CV from "../../assets/resume/subhan.pdf";
 import { Link } from "react-router-dom";
 
-
-
 const Profile = () => {
   return (
     <div
@@ -32,25 +30,30 @@ const Profile = () => {
             </div>
           </div>
         </div>
-
         <div className="max-sm:w-full w-[33rem]">
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am a Professional Web Developer & Designer
+            I am a Professional Web Developer
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
-            <p className={``}>
-              I design and develop services for clients, specializing in modern, responsive websites, web applications, and online platforms. My passion is to create seamless digital experiences that are both visually engaging and highly functional. I focus on delivering solutions that combine style, usability, and performance.
+            <p>
+              I build modern, responsive web applications for clients using 
+              PHP, Angular, WordPress, and JavaScript. I focus on delivering 
+              clean, functional, and user-friendly solutions that solve 
+              real problems.
             </p>
             <p className="mt-3">
-             I design and develop modern, responsive websites and web applications, focusing on creating stylish, user-friendly digital experiences.
+              With hands-on experience in both frontend and backend development, 
+              I have worked on e-commerce platforms, hospital portals, SEO 
+              portfolios, and dynamic web apps — always focusing on 
+              performance and usability.
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">
-            <a
+            
               className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]`}
               href={CV}
             >
