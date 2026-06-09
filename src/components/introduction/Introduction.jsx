@@ -43,7 +43,11 @@ const Introduction = () => {
             that are both functional and user-friendly.
           </p>
           <p className="text-center lg:text-start">
+<<<<<<< HEAD
             <a
+=======
+            
+>>>>>>> fd81f99bfa80f90b87d4060999c0270ca1b82814
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
               href="mailto:buisnesswithsubhan@gmail.com"
             >
