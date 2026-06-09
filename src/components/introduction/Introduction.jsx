@@ -2,7 +2,6 @@ import person from "../../assets/images/p2.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 
-// Information summary data
 const informationSummaryData = [
   {
     id: 1,
@@ -11,7 +10,7 @@ const informationSummaryData = [
   },
   {
     id: 2,
-    title: "Software Engineer",
+    title: "Web Developer",
     description: "Role",
   },
   {
@@ -30,23 +29,21 @@ const Introduction = () => {
       <div className="w-full flex flex-col justify-between max-lg:text-center">
         <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
-            Hello, I’m
+            Hello, I'm
             <span className="text-nowrap shrink-0 inline-block w-full">
-             Subhan Imran
+              Subhan Imran
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            A <span className="bg-highlight">Software Enginner</span>{" "} based in Karachi, Pakistan.
-            I’m passionate about building modern,
-            responsive, and visually engaging digital
-            experiences. With a strong foundation in
-            frontend & backend development,
-            I focus  on creating impactful
-            web solutions that blend functionality 
-            with creativity.
+            A <span className="bg-highlight">Web Developer</span>{" "}
+            based in Karachi, Pakistan. I build modern,
+            responsive, and visually engaging web applications
+            using PHP, Angular, WordPress, and JavaScript.
+            I focus on creating practical web solutions
+            that are both functional and user-friendly.
           </p>
           <p className="text-center lg:text-start">
-            <a
+            
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
               href="mailto:buisnesswithsubhan@gmail.com"
             >
