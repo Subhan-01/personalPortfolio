@@ -34,11 +34,11 @@ const NavBar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="navbar min-h-[75px]">
+      <div className="navbar min-h-[64px] md:min-h-[75px] flex-nowrap justify-between items-center">
 
-          {/* Mobile Menu */}
-          <div className="navbar-start lg:hidden">
-            <div className="dropdown">
+          {/* Left: Mobile menu + Logo */}
+          <div className="navbar-start flex items-center gap-2">
+            <div className="dropdown lg:hidden">
               <div tabIndex={0} role="button" className="btn btn-ghost">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +74,7 @@ const NavBar = () => {
                 ))}
               </ul>
             </div>
-          </div>
 
-          {/* Logo */}
-          <div className="navbar-start lg:flex-none">
             <Link
               to="introduction"
               smooth={true}
@@ -87,15 +84,16 @@ const NavBar = () => {
               <img
                 src={logo}
                 alt="logo"
-                className="h-10 w-10 rounded-full"
+                className="h-9 w-9 sm:h-10 sm:w-10 rounded-full border-2 border-violet-200 flex-shrink-0"
               />
 
-              <div className="ml-3">
-                <h2 className="text-xl font-bold text-slate-900">
-                  Subhan Personal Portfolio
+              <div className="ml-3 flex-1 min-w-0">
+                <h2 className="text-sm sm:text-base md:text-xl font-semibold text-slate-900 truncate">
+                  <span className="sm:hidden">Subhan</span>
+                  <span className="hidden sm:inline">Subhan Personal Portfolio</span>
                 </h2>
 
-                <p className="text-xs text-slate-500 hidden sm:block">
+                <p className="text-xs text-slate-500 hidden sm:block truncate">
                   Web Developer
                 </p>
               </div>
@@ -129,7 +127,7 @@ const NavBar = () => {
               to="contact"
               smooth={true}
               duration={800}
-              className="btn bg-violet-600 hover:bg-violet-700 border-0 text-white rounded-xl px-6"
+              className="btn bg-violet-600 hover:bg-violet-700 border-0 text-white rounded-full h-9 px-4 md:px-6 text-sm md:text-base inline-flex shadow-md"
             >
               Let's Talk
             </Link>

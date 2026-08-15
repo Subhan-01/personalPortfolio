@@ -24,7 +24,7 @@ const Experience = () => {
 
   const experience = [
     {
-      year: "July 2024 – Present",
+      year: "July 2025 – Sep 2025",
       title: "Faculty (Programming & Web Development)",
       place: "Aptech Site",
       desc: "Teaching ASP.NET Core, SQL, and guiding students in real-world web projects and problem-solving.",
