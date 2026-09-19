@@ -56,7 +56,7 @@ const Profile = () => {
   <a
     className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
     href={CV}
-    download
+    download="Subhan_Imran_Resume.pdf"
     target="_blank"
     rel="noopener noreferrer"
   >
